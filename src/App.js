@@ -75,7 +75,7 @@ render() {
         }
 
         <p>Latitude: {lat} - Longitude: {lon}</p>
-        <img src={this.state.cityMap} alt={this.state.cityName}/>
+        <div><img src={this.state.cityMap} alt={this.state.cityName}/></div>
 
         </main>
     </>

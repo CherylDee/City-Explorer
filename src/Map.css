@@ -1,11 +1,14 @@
 body {
   background-color: lightskyblue;
   align-content: center;
+  display: flex;
+  margin-left: 25%;
 }
 
 h1 {
   text-align: center;
   margin: 3vh;
+  position: relative;
 }
 
 form {
@@ -21,11 +24,8 @@ p {
   text-align: center;
 }
 
-img {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 33%;
-  align-content: center;
+div img { 
+  align-self: center;
   border: 3px solid gold;
   border-radius: 20px;
 }
