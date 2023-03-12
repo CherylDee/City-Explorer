@@ -1,0 +1,29 @@
+body {
+  background-color: lightskyblue;
+  align-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 3vh;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+form button {
+  background-color: aquamarine;
+}
+
+p {
+  text-align: center;
+}
+
+img {
+  margin: 3vh 0 0 22vh;
+  align-content: center;
+  border: 3px solid gold;
+  border-radius: 20px;
+}
