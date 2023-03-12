@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 import * as React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -78,6 +79,9 @@ handleSubmit = async (e) => {
   render() {
       let lat = this.state.cityData.lat;
       let lon = this.state.cityData.lon;
+      let weather = this.state.weatherData;
+      let date = this.state.valid_date;
+      let description = this.state.description;
 
     return (
     <>
@@ -101,11 +105,12 @@ handleSubmit = async (e) => {
         
 
         <p>Latitude: {lat} - Longitude: {lon}</p>
-        <p>Weather:  
-            Date:
-            Description:
+        <p>Weather:  {weather}
+            Date: {date}
+            Description: {description}
         </p>
         <div><img src={this.state.cityMap} alt={this.state.cityName}/></div>
+        <Weather />
         </main>
     </>
     
