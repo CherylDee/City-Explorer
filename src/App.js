@@ -38,7 +38,7 @@ getCityData = async (event) => {
     this.setState({
       cityData: cityDataFromAxios.data[0],
       error: false,
-      cityMap: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&center=${lat},${lon}&zoom=10`
+      cityMap: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&center=${lat},${lon}&zoom=12`
     })
 
   } catch (error) {
