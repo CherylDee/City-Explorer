@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **Author**: Cheryl McCalop
 
-**Version**: 1.0.0 
+**Version**: 1.0.0
 
 ## Overview
 
@@ -16,16 +16,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Getting Started with Create React App: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Users must create download React, Bootstrap, Axios, and get an API Access Token to use a Location IQ Geocoding API.
 
-
 ## Architecture
 
 Languages used in this application are JavaScript librarys: React, Bootstrap, Axios,, along with HTML, and CSS. Tools used are VSCode Editor with Github and Ubuntu terminal. Endpoint:
 
 Region 1: US
-GET: https://us1.locationiq.com/v1/search.php
+GET: 'https://us1.locationiq.com/v1/search.php'
 
 Region 2: Europe
-GET: https://eu1.locationiq.com/v1/search.php
+GET: 'https://eu1.locationiq.com/v1/search.php'
 
 Query parameters:
 
