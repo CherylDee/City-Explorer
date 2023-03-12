@@ -52,7 +52,7 @@ getCityData = async (event) => {
 render() {
   let lat = this.state.cityData.lat;
   let lon = this.state.cityData.lon;
-  let cityMap = this.state.cityMap;
+
   
    return (
     <>
