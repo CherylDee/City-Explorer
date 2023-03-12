@@ -8,6 +8,10 @@ class Weather extends React.Component {
     return (
       <>
       <h3>Daily Weather</h3>
+      <p>Weather:
+          Date:
+          Description:
+      </p>
   
       </>
     )
