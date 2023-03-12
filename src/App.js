@@ -101,6 +101,10 @@ handleSubmit = async (e) => {
         
 
         <p>Latitude: {lat} - Longitude: {lon}</p>
+        <p>Weather:  
+            Date:
+            Description:
+        </p>
         <div><img src={this.state.cityMap} alt={this.state.cityName}/></div>
         </main>
     </>
