@@ -4,7 +4,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import './Map.css';
-import './Weather';
 
 class App extends React.Component {
   constructor(props) {
@@ -38,6 +37,11 @@ handleSubmit = async (e) => {
 
     let lat = cityDataFromAxios.data[0].lat;
     let lon = cityDataFromAxios.data[0].lon;
+
+    console.log(cityDataFromAxios.data[0]);
+    console.log(`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATIONIQ_API_KEY}&center=${lat},${lon}&zoom=12`)
+
+    
 
     this.handleGetWeather(lat, lon);
     
@@ -105,12 +109,9 @@ handleSubmit = async (e) => {
         
 
         <p>Latitude: {lat} - Longitude: {lon}</p>
-        <p>Weather:  {weather}
-            Date: {date}
-            Description: {description}
-        </p>
+
         <div><img src={this.state.cityMap} alt={this.state.cityName}/></div>
-        <Weather />
+      
         </main>
     </>
     
