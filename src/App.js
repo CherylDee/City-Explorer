@@ -36,8 +36,8 @@ handleSubmit = async (e) => {
 
     let cityDataFromAxios = await axios.get(url);
 
-    let lat = this.state.cityData.lat;
-    let lon = this.state.cityData.lon;
+    let lat = cityDataFromAxios.data[0].lat;
+    let lon = cityDataFromAxios.data[0].lon;
 
     this.handleGetWeather(lat, lon);
     
@@ -79,9 +79,9 @@ handleSubmit = async (e) => {
   render() {
       let lat = this.state.cityData.lat;
       let lon = this.state.cityData.lon;
-      let weather = this.state.weatherData;
-      let date = this.state.valid_date;
-      let description = this.state.description;
+      // let weather = this.state.weatherData;
+      // let date = this.state.valid_date;
+      // let description = this.state.description;
 
     return (
     <>
