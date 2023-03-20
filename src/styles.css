@@ -1,0 +1,36 @@
+h1{
+  text-align: center;
+  background-color: black;
+  color: whitesmoke;
+}
+html {
+  background-color: black;
+}
+#root{
+  background-color: black;
+}
+label {
+  color: white;
+}
+form {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+p {
+  color: red;
+}
+.card {
+  margin-top: 10px;
+}
+.card-title{
+  color: red;
+}
+.card-body {
+  background-color: gainsboro;
+}
